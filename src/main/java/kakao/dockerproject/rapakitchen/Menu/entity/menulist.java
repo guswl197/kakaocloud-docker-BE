@@ -4,15 +4,15 @@ import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.sql.Timestamp;
+
 
 @Entity
 @NoArgsConstructor
-public class Menu {
+public class menulist {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="menu_id")
     private Integer menuId;
 
     @Column(name="menu_one")
@@ -31,13 +31,13 @@ public class Menu {
     private String menuFiv;
 
     @Column(name="menu_date")
-    private Date menuDate;
+    private Timestamp menuDate;
 
     @Column(name="public_day", columnDefinition = "TINYINT", length=1)
-    private int publicDay;
+    private Byte publicDay;
 
     @Builder
-    public Menu(Integer menuId, String menuOne, String menuTwo, String menuThr, String menuFou, String menuFiv, Date menuDate, int publicDay) {
+    public menulist(Integer menuId, String menuOne, String menuTwo, String menuThr, String menuFou, String menuFiv, Timestamp menuDate, Byte publicDay) {
         this.menuId = menuId;
         this.menuOne = menuOne;
         this.menuTwo = menuTwo;
