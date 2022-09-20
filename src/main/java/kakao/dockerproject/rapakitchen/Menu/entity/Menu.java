@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @NoArgsConstructor
@@ -30,13 +31,13 @@ public class Menu {
     private String menuFiv;
 
     @Column(name="menu_date")
-    private String menuDate;
+    private Date menuDate;
 
     @Column(name="public_day", columnDefinition = "TINYINT", length=1)
     private int publicDay;
 
     @Builder
-    public Menu(Integer menuId, String menuOne, String menuTwo, String menuThr, String menuFou, String menuFiv, String menuDate, int publicDay) {
+    public Menu(Integer menuId, String menuOne, String menuTwo, String menuThr, String menuFou, String menuFiv, Date menuDate, int publicDay) {
         this.menuId = menuId;
         this.menuOne = menuOne;
         this.menuTwo = menuTwo;
