@@ -26,9 +26,12 @@ public class CommentController {
         commentlist addComment = null;
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
-
         try {
-            addComment = commentlist.builder().commentDate(timestamp).nickName(comment.getNickName()).commentMenu(comment.getCommentMenu()).build();
+            addComment = commentlist.builder()
+                    .commentDate(timestamp)
+                    .nickName(comment.getNickName())
+                    .commentMenu(comment.getCommentMenu())
+                    .build();
             commentService.write(menuId, addComment);
         } catch (Exception e) {
             return false;
