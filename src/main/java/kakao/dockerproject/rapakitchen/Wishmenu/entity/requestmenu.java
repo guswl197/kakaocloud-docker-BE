@@ -29,6 +29,14 @@ public class requestmenu {
         this.requestMenu = requestMenu;
     }
 
+    public Timestamp getRequestDate() {
+        return requestDate;
+    }
+
+    public String getRequestMenu() {
+        return requestMenu;
+    }
+
     @Override
     public String toString() {
         return "requestmenu{" +
