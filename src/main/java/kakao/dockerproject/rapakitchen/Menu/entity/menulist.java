@@ -1,6 +1,7 @@
 package kakao.dockerproject.rapakitchen.Menu.entity;
 
 import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -8,6 +9,7 @@ import java.sql.Timestamp;
 
 
 @Entity
+@Data
 @NoArgsConstructor
 public class menulist {
 
