@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CommentRepository extends JpaRepository<commentlist, Integer> {
 
+   // commentlist findByMenuId(Integer menuId);
 }

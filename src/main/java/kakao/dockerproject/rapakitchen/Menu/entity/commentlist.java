@@ -38,6 +38,25 @@ public class commentlist {
         this.commentMenu = commentMenu;
     }
 
+    public Integer getCommentId() {
+        return commentId;
+    }
+
+    public Timestamp getCommentDate() {
+        return commentDate;
+    }
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public String getCommentMenu() {
+        return commentMenu;
+    }
+
+    public menulist getMenu() {
+        return menu;
+    }
 
     public void setCommentId(Integer commentId) {
         this.commentId = commentId;

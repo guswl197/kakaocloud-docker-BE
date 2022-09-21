@@ -36,6 +36,10 @@ public class menulist {
     @Column(name="public_day", columnDefinition = "TINYINT", length=1)
     private Byte publicDay;
 
+    public Integer getMenuId() {
+        return menuId;
+    }
+
     @Builder
     public menulist(Integer menuId, String menuOne, String menuTwo, String menuThr, String menuFou, String menuFiv, Timestamp menuDate, Byte publicDay) {
         this.menuId = menuId;
